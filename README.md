@@ -1,43 +1,57 @@
-# Pennington Dental Menu Options
+# Pennington Dental - Services Submenu Options
 
-This Next.js project showcases 3 modern menu design options for the Pennington Dental Associates website.
+This Next.js project showcases 3 modern submenu design options for the Services dropdown on the Pennington Dental Associates website. The main navigation matches the exact styling from the current website.
 
-## 🎨 Menu Options
+## 🎨 Design Specifications
 
-### Option 1: Clean Mega Menu
+- **Font**: Proxima Nova, sans-serif
+- **Color**: rgb(55, 68, 109) - Navy blue
+- **Main Menu**: Exact replica of current website
+- **Focus**: Only the Services submenu dropdown variations
+
+## 📋 Submenu Options
+
+### Submenu Option 1: Categorized Grid
 - **Layout**: 2-column grid with 4 service categories
+- **Categories**: 
+  - General Dentistry
+  - Restorative
+  - Cosmetic
+  - Specialized Care
 - **Features**: 
-  - Grouped services by type (General Dentistry, Restorative, Cosmetic, Specialized Care)
-  - Dental Implants submenu displayed inline
-  - Hover animations with dot indicators
-  - Clean, professional design
+  - Clean organization by service type
+  - Dental Implants submenu shown inline with arrows
+  - Easy to scan and navigate
 
-### Option 2: Featured Services Layout
-- **Layout**: Two-section mega menu (Featured | All Services)
+### Submenu Option 2: Alphabetical List
+- **Layout**: 2-column alphabetical list (no categories)
 - **Features**:
-  - Left side highlights featured services with gradient cards
-  - Right side shows all services in organized categories
+  - All services in alphabetical order
   - Dental Implants submenu appears on hover to the right
-  - Modern card-based design with descriptions
+  - Simple and straightforward
+  - Chevron indicator for submenu items
 
-### Option 3: Interactive Tabbed Menu
-- **Layout**: Sidebar tabs with content area
+### Submenu Option 3: Three Column Layout
+- **Layout**: 3 equal columns with vertical dividers
 - **Features**:
-  - Icon-based category navigation
-  - Color-coded sections with unique gradients
-  - Popular services highlighted with badges
-  - Interactive tab switching on hover
-  - Visual hierarchy with icons
+  - Balanced distribution of services
+  - Visual separation with dividers
+  - Dental Implants submenu inline in middle column
+  - Clean, organized appearance
 
 ## 🚀 Getting Started
 
-### Development Server
+### View Locally
 
+The development server should already be running at:
+```
+http://localhost:3000
+```
+
+If not, run:
 ```bash
 npm run dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) to view the menu options.
 
 ### Build for Production
 
@@ -48,45 +62,104 @@ npm start
 
 ## 📦 Deploy to Vercel
 
-1. Push this repository to GitHub
+1. Push this repository to GitHub:
+```bash
+git remote add origin YOUR_GITHUB_REPO_URL
+git push -u origin main
+```
+
 2. Go to [vercel.com](https://vercel.com) and sign in
 3. Click "Add New Project"
 4. Import your GitHub repository
-5. Vercel will auto-detect Next.js settings
-6. Click "Deploy"
+5. Click "Deploy"
 
 Your site will be live in minutes!
-
-Alternatively, use the Vercel CLI:
-
-```bash
-npm install -g vercel
-vercel
-```
 
 ## 🛠️ Tech Stack
 
 - **Framework**: Next.js 14+ (App Router)
-- **Styling**: Tailwind CSS
+- **Styling**: Tailwind CSS + Custom CSS
+- **Font**: Proxima Nova (via Adobe Typekit)
 - **Icons**: Lucide React
 - **Language**: TypeScript
 
 ## 📱 Responsive Design
 
-All menu options include:
-- Desktop navigation with mega menus
+All submenu options include:
+- Desktop navigation with hover-activated mega menus
 - Mobile navigation with hamburger menu
-- Fully responsive layouts
 - Touch-friendly mobile interactions
+- Consistent styling across all screen sizes
+
+## 🎯 Main Navigation (Consistent Across All Options)
+
+- HOME
+- MEET THE TEAM
+- **SERVICES** (3 different dropdown options)
+- NEW PATIENT INFO
+- DENTAL MEMBERSHIP CLUB
+- ARTICLES
+- CONTACT US
 
 ## 📝 Customization
 
-To customize the menus:
+To customize the menu items, edit the `menuData` object in each component:
 
-1. Edit the `menuData` object in each component (`components/MenuOption1.tsx`, etc.)
-2. Modify colors in the Tailwind classes
-3. Adjust spacing, shadows, and animations as needed
-4. Update links to match your actual page routes
+```typescript
+// components/MenuSubmenuOption1.tsx (or 2, 3)
+const menuData = {
+  mainLinks: [
+    { title: 'HOME', href: '/' },
+    // ... more links
+  ],
+  services: {
+    // Your service categories here
+  },
+};
+```
+
+### Change Colors
+
+The Pennington blue color is defined as `rgb(55, 68, 109)`. To change it globally, use find and replace across the component files.
+
+### Change Font
+
+The font is set in `app/layout.tsx` and `app/globals.css`:
+```css
+font-family: proxima-nova, sans-serif;
+```
+
+## 🌐 Services Included
+
+All submenus include these services:
+
+**General/Preventive:**
+- Dental Cleaning and Exams
+- Dental Emergencies
+- Nightguards
+
+**Extractions:**
+- Tooth Extractions
+- Wisdom Teeth Removal
+
+**Restorative:**
+- Dental Implants (with submenu)
+  - All on 4 Dental Implants
+  - Implant Retained Dentures
+  - Dentures
+- Crowns
+- Dental Bridges
+- Periodontal Care and Treatment
+
+**Cosmetic:**
+- Smile Makeover
+- Invisalign
+- Cosmetic Bonding
+- Teeth Whitening
+- Veneers
+
+**Specialized:**
+- Sedation Dentistry
 
 ## 📄 License
 
@@ -94,4 +167,4 @@ This project is open source and available under the MIT License.
 
 ---
 
-Built with ❤️ for Pennington Dental Associates
+Built for Pennington Dental Associates • 2026
