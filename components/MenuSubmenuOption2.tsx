@@ -96,7 +96,7 @@ export default function MenuSubmenuOption2() {
                       <a
                         href={item.href}
                         className="flex items-center justify-between py-2 px-3 rounded transition-colors hover:bg-gray-50"
-                        style={{ color: 'rgb(55, 68, 109)' }}
+                        style={{ color: 'rgb(55, 68, 109)', fontWeight: 400 }}
                       >
                         <span className="text-sm">{item.title}</span>
                         {item.submenu && (
@@ -112,7 +112,7 @@ export default function MenuSubmenuOption2() {
                                 <a
                                   href={subitem.href}
                                   className="block text-sm py-2 px-3 rounded transition-colors hover:bg-gray-50"
-                                  style={{ color: 'rgb(55, 68, 109)' }}
+                                  style={{ color: 'rgb(55, 68, 109)', fontWeight: 400 }}
                                 >
                                   {subitem.title}
                                 </a>
@@ -183,7 +183,7 @@ export default function MenuSubmenuOption2() {
                           <a
                             href={item.href}
                             className="block text-sm py-2"
-                            style={{ color: 'rgb(55, 68, 109)', opacity: 0.8 }}
+                            style={{ color: 'rgb(55, 68, 109)', opacity: 0.8, fontWeight: 400 }}
                           >
                             {item.title}
                           </a>
@@ -194,7 +194,7 @@ export default function MenuSubmenuOption2() {
                                   <a
                                     href={subitem.href}
                                     className="block text-xs py-1"
-                                    style={{ color: 'rgb(55, 68, 109)', opacity: 0.6 }}
+                                    style={{ color: 'rgb(55, 68, 109)', opacity: 0.6, fontWeight: 400 }}
                                   >
                                     {subitem.title}
                                   </a>

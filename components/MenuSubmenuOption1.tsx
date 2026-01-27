@@ -100,7 +100,7 @@ export default function MenuSubmenuOption1() {
                             <a
                               href={item.href}
                               className="text-sm transition-colors hover:opacity-70"
-                              style={{ color: 'rgb(55, 68, 109)' }}
+                              style={{ color: 'rgb(55, 68, 109)', fontWeight: 400 }}
                             >
                               {item.title}
                             </a>
@@ -111,7 +111,7 @@ export default function MenuSubmenuOption1() {
                                     <a
                                       href={subitem.href}
                                       className="text-xs transition-colors hover:opacity-70"
-                                      style={{ color: 'rgb(55, 68, 109)', opacity: 0.7 }}
+                                      style={{ color: 'rgb(55, 68, 109)', opacity: 0.7, fontWeight: 400 }}
                                     >
                                       → {subitem.title}
                                     </a>
@@ -189,7 +189,7 @@ export default function MenuSubmenuOption1() {
                               <a
                                 href={item.href}
                                 className="block text-sm"
-                                style={{ color: 'rgb(55, 68, 109)', opacity: 0.8 }}
+                                style={{ color: 'rgb(55, 68, 109)', opacity: 0.8, fontWeight: 400 }}
                               >
                                 {item.title}
                               </a>
@@ -200,7 +200,7 @@ export default function MenuSubmenuOption1() {
                                       <a
                                         href={subitem.href}
                                         className="block text-xs"
-                                        style={{ color: 'rgb(55, 68, 109)', opacity: 0.6 }}
+                                        style={{ color: 'rgb(55, 68, 109)', opacity: 0.6, fontWeight: 400 }}
                                       >
                                         {subitem.title}
                                       </a>

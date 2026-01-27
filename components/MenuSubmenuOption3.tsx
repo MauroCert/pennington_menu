@@ -103,7 +103,7 @@ export default function MenuSubmenuOption3() {
                           <a
                             href={item.href}
                             className="block text-sm py-1 transition-colors hover:opacity-70"
-                            style={{ color: 'rgb(55, 68, 109)' }}
+                            style={{ color: 'rgb(55, 68, 109)', fontWeight: 400 }}
                           >
                             {item.title}
                           </a>
@@ -120,7 +120,7 @@ export default function MenuSubmenuOption3() {
                           <a
                             href={item.href}
                             className="block text-sm py-1 transition-colors hover:opacity-70"
-                            style={{ color: 'rgb(55, 68, 109)' }}
+                            style={{ color: 'rgb(55, 68, 109)', fontWeight: 400 }}
                           >
                             {item.title}
                           </a>
@@ -131,7 +131,7 @@ export default function MenuSubmenuOption3() {
                                   <a
                                     href={subitem.href}
                                     className="block text-xs py-1 transition-colors hover:opacity-70"
-                                    style={{ color: 'rgb(55, 68, 109)', opacity: 0.7 }}
+                                    style={{ color: 'rgb(55, 68, 109)', opacity: 0.7, fontWeight: 400 }}
                                   >
                                     • {subitem.title}
                                   </a>
@@ -152,7 +152,7 @@ export default function MenuSubmenuOption3() {
                           <a
                             href={item.href}
                             className="block text-sm py-1 transition-colors hover:opacity-70"
-                            style={{ color: 'rgb(55, 68, 109)' }}
+                            style={{ color: 'rgb(55, 68, 109)', fontWeight: 400 }}
                           >
                             {item.title}
                           </a>
@@ -220,7 +220,7 @@ export default function MenuSubmenuOption3() {
                           <a
                             href={item.href}
                             className="block text-sm py-2"
-                            style={{ color: 'rgb(55, 68, 109)', opacity: 0.8 }}
+                            style={{ color: 'rgb(55, 68, 109)', opacity: 0.8, fontWeight: 400 }}
                           >
                             {item.title}
                           </a>
@@ -231,7 +231,7 @@ export default function MenuSubmenuOption3() {
                                   <a
                                     href={subitem.href}
                                     className="block text-xs py-1"
-                                    style={{ color: 'rgb(55, 68, 109)', opacity: 0.6 }}
+                                    style={{ color: 'rgb(55, 68, 109)', opacity: 0.6, fontWeight: 400 }}
                                   >
                                     {subitem.title}
                                   </a>
