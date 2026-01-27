@@ -1,76 +1,82 @@
-import MenuOption1 from '@/components/MenuOption1';
-import MenuOption2 from '@/components/MenuOption2';
-import MenuOption3 from '@/components/MenuOption3';
+import MenuSubmenuOption1 from '@/components/MenuSubmenuOption1';
+import MenuSubmenuOption2 from '@/components/MenuSubmenuOption2';
+import MenuSubmenuOption3 from '@/components/MenuSubmenuOption3';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-full mx-auto space-y-16 py-12">
         
-        {/* Option 1 */}
+        {/* Submenu Option 1 */}
         <section className="space-y-4">
           <div className="px-8">
             <div className="max-w-7xl mx-auto">
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">Option 1: Clean Mega Menu</h2>
-              <p className="text-gray-600 mb-4">
-                Categorized grid layout with clear sections. Services are grouped by type with visual indicators.
+              <h2 className="text-3xl font-bold mb-2" style={{ color: 'rgb(55, 68, 109)' }}>
+                Submenu Option 1: Categorized Grid
+              </h2>
+              <p className="mb-4" style={{ color: 'rgb(55, 68, 109)', opacity: 0.8 }}>
+                Services organized in 4 categories with a 2-column layout. Clean and easy to scan.
               </p>
             </div>
           </div>
           <div className="bg-white shadow-lg">
-            <MenuOption1 />
+            <MenuSubmenuOption1 />
           </div>
           <div className="px-8">
-            <div className="max-w-7xl mx-auto bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <p className="text-sm text-blue-900">
-                <strong>Features:</strong> 4 service categories in a 2-column grid, Dental Implants submenu shown inline, 
-                hover animations with dot indicators
+            <div className="max-w-7xl mx-auto rounded-lg p-4" style={{ backgroundColor: 'rgb(55, 68, 109, 0.05)', border: '1px solid rgb(55, 68, 109, 0.2)' }}>
+              <p className="text-sm" style={{ color: 'rgb(55, 68, 109)' }}>
+                <strong>Features:</strong> 4 service categories (General Dentistry, Restorative, Cosmetic, Specialized Care) in a 2-column grid. 
+                Dental Implants submenu shown inline with arrow indicators.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Option 2 */}
+        {/* Submenu Option 2 */}
         <section className="space-y-4">
           <div className="px-8">
             <div className="max-w-7xl mx-auto">
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">Option 2: Featured Services Layout</h2>
-              <p className="text-gray-600 mb-4">
-                Two-column design with featured services highlighted on the left and all services categorized on the right.
+              <h2 className="text-3xl font-bold mb-2" style={{ color: 'rgb(55, 68, 109)' }}>
+                Submenu Option 2: Alphabetical List
+              </h2>
+              <p className="mb-4" style={{ color: 'rgb(55, 68, 109)', opacity: 0.8 }}>
+                All services in a 2-column alphabetical list. Dental Implants submenu appears on hover to the right.
               </p>
             </div>
           </div>
           <div className="bg-white shadow-lg">
-            <MenuOption2 />
+            <MenuSubmenuOption2 />
           </div>
           <div className="px-8">
-            <div className="max-w-7xl mx-auto bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <p className="text-sm text-blue-900">
-                <strong>Features:</strong> Featured services in blue gradient cards, Dental Implants submenu appears on hover to the right, 
-                clean two-section layout
+            <div className="max-w-7xl mx-auto rounded-lg p-4" style={{ backgroundColor: 'rgb(55, 68, 109, 0.05)', border: '1px solid rgb(55, 68, 109, 0.2)' }}>
+              <p className="text-sm" style={{ color: 'rgb(55, 68, 109)' }}>
+                <strong>Features:</strong> Simple 2-column alphabetical list without categories. 
+                Dental Implants submenu appears in a floating panel on hover with chevron indicator.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Option 3 */}
+        {/* Submenu Option 3 */}
         <section className="space-y-4">
           <div className="px-8">
             <div className="max-w-7xl mx-auto">
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">Option 3: Interactive Tabbed Menu</h2>
-              <p className="text-gray-600 mb-4">
-                Sidebar navigation with icons and tab-based content. Each category has its own icon and color scheme.
+              <h2 className="text-3xl font-bold mb-2" style={{ color: 'rgb(55, 68, 109)' }}>
+                Submenu Option 3: Three Column Layout
+              </h2>
+              <p className="mb-4" style={{ color: 'rgb(55, 68, 109)', opacity: 0.8 }}>
+                Services distributed across 3 columns with vertical dividers. Balanced and organized.
               </p>
             </div>
           </div>
           <div className="bg-white shadow-lg">
-            <MenuOption3 />
+            <MenuSubmenuOption3 />
           </div>
           <div className="px-8">
-            <div className="max-w-7xl mx-auto bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <p className="text-sm text-blue-900">
-                <strong>Features:</strong> Icon-based category tabs, color-coded sections with gradients, 
-                popular services highlighted with badges, Dental Implants submenu shown below the main item
+            <div className="max-w-7xl mx-auto rounded-lg p-4" style={{ backgroundColor: 'rgb(55, 68, 109, 0.05)', border: '1px solid rgb(55, 68, 109, 0.2)' }}>
+              <p className="text-sm" style={{ color: 'rgb(55, 68, 109)' }}>
+                <strong>Features:</strong> 3 equal columns with vertical dividers for visual separation. 
+                Dental Implants submenu shown inline in the middle column with bullet points.
               </p>
             </div>
           </div>
@@ -79,12 +85,14 @@ export default function Home() {
         {/* Instructions */}
         <section className="px-8 pb-12">
           <div className="max-w-7xl mx-auto bg-gray-100 rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Deployment Instructions</h3>
-            <div className="space-y-3 text-gray-700">
+            <h3 className="text-2xl font-bold mb-4" style={{ color: 'rgb(55, 68, 109)' }}>
+              Deployment Instructions
+            </h3>
+            <div className="space-y-3" style={{ color: 'rgb(55, 68, 109)' }}>
               <p>To deploy this project to Vercel:</p>
               <ol className="list-decimal list-inside space-y-2 ml-4">
                 <li>Push this project to a GitHub repository</li>
-                <li>Go to <a href="https://vercel.com" className="text-blue-600 hover:underline">vercel.com</a> and sign in</li>
+                <li>Go to <a href="https://vercel.com" className="underline">vercel.com</a> and sign in</li>
                 <li>Click "Add New Project" and import your repository</li>
                 <li>Vercel will automatically detect Next.js and configure the build settings</li>
                 <li>Click "Deploy" and your site will be live in minutes!</li>
