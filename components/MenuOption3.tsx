@@ -2,8 +2,28 @@
 
 import { useState } from 'react';
 import { ChevronDown, X, Menu, Sparkles, Shield, Smile, Stethoscope } from 'lucide-react';
+import { LucideIcon } from 'lucide-react';
 
-const menuData = {
+type MenuItem = {
+  title: string;
+  href: string;
+  highlight?: boolean;
+  submenu?: { title: string; href: string }[];
+};
+
+type ServiceCategory = {
+  category: string;
+  icon: LucideIcon;
+  color: string;
+  iconColor: string;
+  items: MenuItem[];
+};
+
+const menuData: {
+  mainLinks: { title: string; href: string }[];
+  services: ServiceCategory[];
+  otherLinks: { title: string; href: string }[];
+} = {
   mainLinks: [
     { title: 'Home', href: '/' },
     { title: 'Meet The Team', href: '/meet-the-team' },

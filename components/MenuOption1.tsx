@@ -3,7 +3,17 @@
 import { useState } from 'react';
 import { ChevronDown, X, Menu } from 'lucide-react';
 
-const menuData = {
+type MenuItem = {
+  title: string;
+  href: string;
+  submenu?: { title: string; href: string }[];
+};
+
+const menuData: {
+  mainLinks: { title: string; href: string }[];
+  services: Record<string, MenuItem[]>;
+  otherLinks: { title: string; href: string }[];
+} = {
   mainLinks: [
     { title: 'Home', href: '/' },
     { title: 'Meet The Team', href: '/meet-the-team' },
