@@ -29,10 +29,10 @@ This Next.js project showcases **5 modern submenu design options** for the Servi
 - **Features**: Ultra-clean design, expandable sections, plus icon animation, modern feel
 - **Best For**: Minimalist design lovers, premium brand perception
 
-### Submenu Option 5: Compact 4-Column Grid ✨ NEW
-- **Layout**: Space-efficient 4-column grid
-- **Features**: All services visible at once, card-based design, no scrolling needed
-- **Best For**: High information density, desktop users, quick service comparison
+### Submenu Option 5: Simple Two-Column Clean ✨ NEW
+- **Layout**: Ultra-simple 2-column layout
+- **Features**: No cards, no borders - just clean text with simple hover effects
+- **Best For**: Minimalists, modern brands, clean aesthetic lovers, text-focused design
 
 ## 🚀 Getting Started
 
