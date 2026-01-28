@@ -1,6 +1,6 @@
 # Pennington Dental - Services Submenu Options
 
-This Next.js project showcases 3 modern submenu design options for the Services dropdown on the Pennington Dental Associates website. The main navigation matches the exact styling from the current website.
+This Next.js project showcases **5 modern submenu design options** for the Services dropdown on the Pennington Dental Associates website. The main navigation matches the exact styling from the current website.
 
 ## 🎨 Design Specifications
 
@@ -13,31 +13,26 @@ This Next.js project showcases 3 modern submenu design options for the Services 
 
 ### Submenu Option 1: Categorized Grid
 - **Layout**: 2-column grid with 4 service categories
-- **Categories**: 
-  - General Dentistry
-  - Restorative
-  - Cosmetic
-  - Specialized Care
-- **Features**: 
-  - Clean organization by service type
-  - Dental Implants submenu shown inline with arrows
-  - Easy to scan and navigate
+- **Categories**: General Dentistry, Restorative, Cosmetic, Specialized Care
+- **Features**: Clean organization by service type, inline submenu with arrows
 
 ### Submenu Option 2: Alphabetical List
 - **Layout**: 2-column alphabetical list (no categories)
-- **Features**:
-  - All services in alphabetical order
-  - Dental Implants submenu appears on hover to the right
-  - Simple and straightforward
-  - Chevron indicator for submenu items
+- **Features**: A-Z order, submenu appears on hover to the right, simple and straightforward
 
 ### Submenu Option 3: Three Column Layout
 - **Layout**: 3 equal columns with vertical dividers
-- **Features**:
-  - Balanced distribution of services
-  - Visual separation with dividers
-  - Dental Implants submenu inline in middle column
-  - Clean, organized appearance
+- **Features**: Balanced distribution, visual separation, inline submenu in middle column
+
+### Submenu Option 4: Single Column - Minimal & Spacious ✨ NEW
+- **Layout**: One wide column with generous spacing
+- **Features**: Ultra-clean design, expandable sections, plus icon animation, modern feel
+- **Best For**: Minimalist design lovers, premium brand perception
+
+### Submenu Option 5: Compact 4-Column Grid ✨ NEW
+- **Layout**: Space-efficient 4-column grid
+- **Features**: All services visible at once, card-based design, no scrolling needed
+- **Best For**: High information density, desktop users, quick service comparison
 
 ## 🚀 Getting Started
 
