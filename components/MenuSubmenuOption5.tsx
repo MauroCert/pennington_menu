@@ -81,33 +81,34 @@ export default function MenuSubmenuOption5() {
               <ChevronDown className="ml-1 w-3 h-3" style={{ strokeWidth: 3 }} />
             </button>
             
-            {/* Submenu Option 5: Compact 4-Column Grid - Space Efficient */}
-            <div className="absolute left-1/2 -translate-x-1/2 mt-0 w-[800px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-              <div className="bg-white rounded-lg shadow-2xl border border-gray-100 p-6 mt-2">
-                <div className="grid grid-cols-4 gap-4">
+            {/* Submenu Option 5: Simple Two-Column Clean - Modern & Minimal */}
+            <div className="absolute left-1/2 -translate-x-1/2 mt-0 w-[520px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="bg-white rounded-lg shadow-2xl border border-gray-100 py-6 px-8 mt-2">
+                <div className="grid grid-cols-2 gap-x-12 gap-y-2">
                   {menuData.services.map((item) => (
                     <div key={item.title}>
                       <a
                         href={item.href}
-                        className="block p-3 rounded-md transition-all hover:bg-gray-50 group/item"
+                        className="block py-2 transition-colors hover:opacity-60"
                         style={{ color: 'rgb(55, 68, 109)', fontWeight: 400 }}
                       >
-                        <div className="text-sm leading-snug">{item.title}</div>
-                        {item.submenu && (
-                          <div className="mt-2 pt-2 space-y-1 border-t" style={{ borderColor: 'rgb(55, 68, 109, 0.1)' }}>
-                            {item.submenu.map((subitem) => (
+                        <span className="text-sm">{item.title}</span>
+                      </a>
+                      {item.submenu && (
+                        <ul className="ml-3 mt-1 space-y-1">
+                          {item.submenu.map((subitem) => (
+                            <li key={subitem.title}>
                               <a
-                                key={subitem.title}
                                 href={subitem.href}
-                                className="block text-xs py-0.5 hover:underline"
+                                className="block text-xs py-0.5 transition-colors hover:opacity-60"
                                 style={{ color: 'rgb(55, 68, 109)', opacity: 0.6, fontWeight: 400 }}
                               >
                                 {subitem.title}
                               </a>
-                            ))}
-                          </div>
-                        )}
-                      </a>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   ))}
                 </div>

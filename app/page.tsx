@@ -114,10 +114,10 @@ export default function Home() {
           <div className="px-8">
             <div className="max-w-7xl mx-auto">
               <h2 className="text-3xl font-bold mb-2" style={{ color: 'rgb(55, 68, 109)' }}>
-                Submenu Option 5: Compact 4-Column Grid
+                Submenu Option 5: Simple Two-Column Clean
               </h2>
               <p className="mb-4" style={{ color: 'rgb(55, 68, 109)', opacity: 0.8 }}>
-                Space-efficient 4-column grid. Fits all services in a compact, organized layout.
+                Ultra-simple 2-column layout. Clean, modern, and easy to scan with no visual clutter.
               </p>
             </div>
           </div>
@@ -127,8 +127,8 @@ export default function Home() {
           <div className="px-8">
             <div className="max-w-7xl mx-auto rounded-lg p-4" style={{ backgroundColor: 'rgb(55, 68, 109, 0.05)', border: '1px solid rgb(55, 68, 109, 0.2)' }}>
               <p className="text-sm" style={{ color: 'rgb(55, 68, 109)' }}>
-                <strong>Features:</strong> 4 equal columns with compact cards. 
-                Dental Implants submenu shown inline below the main item. Space-efficient for viewing all services at once.
+                <strong>Features:</strong> Simple 2-column layout with clean typography. 
+                Dental Implants submenu shown inline with minimal styling. No borders, no cards - just clean text.
               </p>
             </div>
           </div>
